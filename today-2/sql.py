@@ -31,8 +31,12 @@ def execute_read_query(connection, query):
     rows = None
     try:
         cursor.execute(query)
-        rows = cursor.fetchall()
+        rows = cursor.fetchall() #lines 27-37 fetch each row from sql and turn them into dictionaries
         return rows
     except Error as e:
         print('Error occurred is: ', e)
+
+            
+    
+    
         
